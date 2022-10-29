@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+     <link rel="/static/css/myFile.css">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+
+
+
+</head>
+<body>
+	<div class = "regform"><h1>Registration For Customer Care Registry</h1></div>
+	<div class="main">
+		<form action="config" method="post">
+			<div id="name">
+				<h2 class="name">Name</h2>
+                 <input class="firstname" type="rext" name="first_name"><br>
+                 <label class="Firstlabel">first name</label>
+                 <input class="lastname" type="text" name="last_name">
+                 <label class="lastlabel">last name</label>
+                 
+			</div>
+
+                <h2 class="name">Roll No</h2>
+                 <input class="company" type="rext" name="company_name">
+                <h2 class="name">Email</h2>
+                 <input class="email" type="rext" name="Email"> 
+                <h2 class="name">Phone</h2>
+                 <input class="code" type="number" name="area_code"> 
+                <label class="areacode">Area code</label> 
+                 <input class="number" type="text" name="phone"> 
+                <label class="phone">phone number</label>
+
+                <h2 class="name">Department</h2>
+                <select class="option" name="subject">
+                	<option disabled="disabled" selected="select">--choose option--</option>
+                	<option>Computer Science And Engineering</option>
+                	<option>Information Technology</option>
+                </select>
+
+
+                <h2 id="student"> Are you beginner ?</h2>
+
+                 <label class="radio">
+                 	<input class="radio_one" type="radio" checked="checked" name="">
+                 	<span class="checkmark"></span>
+                     Yes
+                 </label>
+
+                 <label class="radio">
+                 	<input class="radio_two" type="radio" name="">
+                 	<span class="checkmark"></span>
+                     No
+                 </label>
+
+                 <button type="submit">Register</button>
+                 
+
+		</form>
+
+	</div>
+                
+</body>
+</html>
